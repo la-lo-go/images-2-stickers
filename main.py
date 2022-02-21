@@ -139,9 +139,9 @@ def imageConverter(outputFolder, filePath, img_format):
         if isVertical(imgFR):
             imgFR = resizeVertical(imgFR)
 
-        # Resize horizontal or squared images if they are < 512px
-        elif isSmaller(imgFR):
-            imgFR = resizeSmaller(imgFR)
+        # Resize horizontal or squared images
+        else:
+            imgFR = resizeHorizontal(imgFR)
 
         # Convert to sticker and save it
         toStaticSticker(imgFR, imgBlank, savePath)
@@ -208,7 +208,7 @@ def isSmaller(img):
     return True if img.width < 512 else False
 
 
-def resizeSmaller(img):
+def resizeHorizontal(img):
     return img.resize((512, (img.height * 512) // img.width))
 
 
