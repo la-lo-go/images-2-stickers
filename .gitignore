@@ -1,0 +1,6 @@
+.wastickers
+pruebas/
+venv/
+.idea/
+__pycache__/
+.vscode/
