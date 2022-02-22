@@ -30,6 +30,7 @@ Using Python and the [.wastickers compressed files format](https://fileinfo.com/
 
  - [X] Automatically create multiple packs with just one click regardless of the number of photos.
  - [ ] Create different packs based on the files organization.
+ - [ ] Add .gif support.
 
 ## License
 [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
