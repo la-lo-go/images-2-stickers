@@ -4,7 +4,6 @@
 import glob
 import os
 import re
-import sys
 from zipfile import ZipFile
 
 from PIL import Image
@@ -12,11 +11,9 @@ from PIL import Image
 
 def main():
     inputFolder = './input/'
-    tempFolder = createFolder('temp')
     
-    # Clean console
+    # Clear console
     os.system('cls' if os.name == 'nt' else 'clear')
-    sys.stdin.reconfigure(encoding='utf-8')
     print('<------------------- IMAGES TO STICKERS ------------------->\n')
     
     # Get all images from the input folder
@@ -33,15 +30,15 @@ def main():
     check_len_files(files)
     print('Images quantity: OK')
     
-    # Convert icon
-    imageConverter(tempFolder, iconPath, 'png')
-    
     # Get author and fileName
     author = input('\nAuthor for the package: ')
     fileName = input('Package name: ')
 
     # Create temp folder
-    createFolder(tempFolder)
+    tempFolder = createFolder('temp')
+    
+    # Convert icon
+    imageConverter(tempFolder, iconPath, 'png')
     
     # Create folder to save .wasticker files
     outFolder = createFolder(fileName)
