@@ -11,7 +11,7 @@ Using Python and the [.wastickers compressed files format](https://fileinfo.com/
 
 1. Clone (or download) the repository: 
 	``` bash
-	git clone https://github.com/la-lo-go/images-to-stickers
+	git clone https://github.com/la-lo-go/images-2-stickers
 	```
   
 2. Install the packages:
@@ -21,10 +21,14 @@ Using Python and the [.wastickers compressed files format](https://fileinfo.com/
 
 ## How to use the program
  1. Into the `input` folder copy **all** the images you want to convert (3 minimum) and an icon image as `icon.png` or `icon.jpg`.
- 2. Run the main.py file.
- 3. Input the *name of the sticker package* and the *author*.
- 4. Transfer the `.wastickers` files to your phone.
- 5. Open the files with the Sticker Maker app and add them to Whatsapp.
+ 2. Run the main.py file
+
+    ``` bash
+	python main.py
+	```
+ 4. Input the *name of the sticker package* and the *author*.
+ 5. Transfer the `.wastickers` files to your phone.
+ 6. Open the files with the Sticker Maker app and add them to Whatsapp.
 
 ## Roadmap
 
